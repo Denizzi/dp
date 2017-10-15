@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Adapter is composed&#xD;&#xA;with the Adaptee. &#xD;&#xA;(PenguinAdapter has a Penguin)">
+    <Position X="3.865" Y="4.135" Height="0.927" Width="1.7" />
+  </Comment>
+  <Comment CommentText="The Adapter implements&#xD;&#xA;the Target interface.">
+    <Position X="2.031" Y="2.49" Height="0.5" Width="1.7" />
+  </Comment>
+  <Class Name="Adapter.Duck">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAAAAA=</HashCode>
+      <FileName>Duck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adapter.Penguin">
+    <Position X="7" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Penguin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adapter.PenguinAdapter">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAABQAAAAAA=</HashCode>
+      <FileName>PenguinAdapter.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_penguin" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Adapter.Ducks.GreenDuck">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAAAAA=</HashCode>
+      <FileName>Ducks\GreenDuck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adapter.Penguins.KingPenguin">
+    <Position X="7" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Penguins\KingPenguin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
