@@ -11,7 +11,6 @@ namespace FactoryMethod.Characters
     {
         public override void CreateEquipments()
         {
-
             Equipments().Add(new Sword());
             Equipments().Add(new Shield());
             Equipments().Add(new PlateArmor());
