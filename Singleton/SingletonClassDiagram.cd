@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Thread-safe version">
+    <Position X="7.521" Y="0.521" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Two different threads could both have evaluated the test if (instance==null) and found it to be true,&#xD;&#xA;then both create instances, which violates the singleton pattern.">
+    <Position X="2.552" Y="0.51" Height="1.25" Width="1.7" />
+  </Comment>
+  <Class Name="Singleton.SingletonFirstVersion">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>SingletonFirstVersion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Singleton.SingletonThreadSafe">
+    <Position X="5.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>SingletonThreadSafe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

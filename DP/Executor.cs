@@ -36,20 +36,6 @@ namespace DP
 
         internal static void ExecuteSingleton()
         {
-            //Intent
-            //  • Ensure a class has only one instance, and provide a global point of access to it.
-            //  • Encapsulated "just-in-time initialization" or "initialization on first use".
-
-            //Problem
-            //  Application needs one, and only one, instance of an object.
-            //  Additionally, lazy initialization and global access are necessary.
-
-            //NOTES
-            //  In many ways, the Singleton Pattern is a convention for ensuring one and only one object is instantiated for a given class.
-            //  Just ask yourself: how do I prevent more than one object from being instantiated? It’s not so obvious, is it?
-            //  Let’s say you have an object that contains registry settings. You don’t want multiple copies of that object and its values running around 
-            //      – that would lead to chaos.By using an object you can assure that every object in your application is making use of the same global resource.
-
             //SingletonFirstVersion sfv = new SingletonFirstVersion();
             SingletonFirstVersion sfv2 = SingletonFirstVersion.Instance;
 

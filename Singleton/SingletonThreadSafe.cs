@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace Singleton
 {
-    //This implementation is thread-safe.The thread takes out a lock on a shared object,
-    //and then checks whether or not the instance has been created before creating the instance.
     public sealed class SingletonThreadSafe
     {
         private static SingletonThreadSafe instance = null;
