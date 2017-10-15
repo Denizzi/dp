@@ -11,6 +11,7 @@ namespace Strategy
         //Favor composition over inheritance
         protected IFlyable _flyBehaviour;
         protected IQuackable _quackBehaviour;
+
         public Duck()
         {
 

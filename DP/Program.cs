@@ -16,10 +16,10 @@ namespace DP
         {
             //Executor.ExecuteDecorator();
             //Executor.ExecuteSingleton();
-            //Executor.ExecuteStrategy();
+            Executor.ExecuteStrategy();
             //Executor.ExecuteObserver();
             //Executor.ExecuteFactoryMethod();
-            Executor.ExecuteAdapter();
+            //Executor.ExecuteAdapter();
         }
     }
 }

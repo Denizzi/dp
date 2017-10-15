@@ -72,18 +72,20 @@ namespace DP
 
         internal static void ExecuteStrategy()
         {
+            //Program to an interface, not an implementation
+
             //Intent
             //  • Define a family of algorithms, encapsulate each one, and make them interchangeable.Strategy lets the algorithm vary independently from
             //      the clients that use it.
             //  • Capture the abstraction in an interface, bury implementation details in derived classes.
 
-            Strategy.Duck greenDuck = new GreenDuck();
-            greenDuck.PerformFly();
-            greenDuck.PerformQuack();
+            //Strategy.Duck greenDuck = new GreenDuck();
+            //greenDuck.PerformFly();
+            //greenDuck.PerformQuack();
 
             Strategy.Duck rubberDuck = new RubberDuck();
-            rubberDuck.PerformFly();
-            rubberDuck.PerformQuack();
+            //rubberDuck.PerformFly();
+            //rubberDuck.PerformQuack();
 
             rubberDuck.SetFlyBehaviour(new FlyWithRockets()); // Changing behaviour at runtime !
             rubberDuck.PerformFly();
