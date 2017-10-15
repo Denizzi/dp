@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Problem solved:&#xD;&#xA;&#xD;&#xA;Observers can be added and removed independently at run-time. RegisterObserver() &amp; RemoveObserver() methods&#xD;&#xA;">
+    <Position X="6.24" Y="6.437" Height="1.792" Width="1.7" />
+  </Comment>
+  <Comment CommentText="WeatherObserver gives the WeatherSubject a common interface to talk to when it comes time to update the observers with using NotifyObservers() method.">
+    <Position X="6.219" Y="0.5" Height="1.396" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Define a one - to - many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically. SetMeasurements() methods call NotifyObservers()">
+    <Position X="1.542" Y="6.479" Height="1.823" Width="1.7" />
+  </Comment>
+  <Class Name="Observer.DisplayElements.CurrentConditionsDisplay">
+    <Position X="7" Y="2.75" Width="2" />
+    <AssociationLine Name="_weatherSubject" Type="Observer.WeatherSubject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.469" Y="2.75" />
+        <Point X="7.469" Y="2.208" />
+        <Point X="4.642" Y="2.208" />
+        <Point X="4.642" Y="1.438" />
+        <Point X="3.25" Y="1.438" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAQACAAAAAAAAAAQAAAAABAA=</HashCode>
+      <FileName>DisplayElements\CurrentConditionsDisplay.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_weatherSubject" />
+    </ShowAsAssociation>
+    <Lollipop Position="1.8" />
+  </Class>
+  <Class Name="Observer.DisplayElements.ForecastDisplay">
+    <Position X="9.25" Y="2.75" Width="1.5" />
+    <AssociationLine Name="_weatherSubject" Type="Observer.WeatherSubject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.75" Y="5.204" />
+        <Point X="9.75" Y="5.579" />
+        <Point X="3.75" Y="5.579" />
+        <Point X="3.75" Y="1.827" />
+        <Point X="3.25" Y="1.827" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAQAAAAAAAAQACAAAAAAAAAAQAAAAABAA=</HashCode>
+      <FileName>DisplayElements\ForecastDisplay.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_weatherSubject" />
+    </ShowAsAssociation>
+    <Lollipop Position="1.3" />
+  </Class>
+  <Class Name="Observer.WeatherObserver">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WeatherObserver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Observer.WeatherSubject">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAA=</HashCode>
+      <FileName>WeatherSubject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Observer.Subject.WeatherData">
+    <Position X="1.5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAQAABAAABAAAAAAAAIAAAAAQAAAQgBAA=</HashCode>
+      <FileName>Subject\WeatherData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Observer.IDisplayable">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDisplayable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
