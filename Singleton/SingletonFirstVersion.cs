@@ -10,7 +10,7 @@ namespace Singleton
     {
         private static SingletonFirstVersion instance = null;
 
-        private SingletonFirstVersion() // Can only be instantiated inside the class itself
+        private SingletonFirstVersion()
         {
         }
 

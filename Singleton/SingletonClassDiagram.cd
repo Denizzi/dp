@@ -6,6 +6,9 @@
   <Comment CommentText="Two different threads could both have evaluated the test if (instance==null) and found it to be true,&#xD;&#xA;then both create instances, which violates the singleton pattern.">
     <Position X="2.552" Y="0.51" Height="1.25" Width="1.7" />
   </Comment>
+  <Comment CommentText="Problem solved:&#xD;&#xA;&#xD;&#xA;How can it be ensured that a class has only one instance? &#xD;&#xA;How can a class control its instantiation? - private constructor prevent instantiation from outside. The class can only be instantiated inside itself">
+    <Position X="0.5" Y="3.083" Height="1.886" Width="1.7" />
+  </Comment>
   <Class Name="Singleton.SingletonFirstVersion">
     <Position X="0.5" Y="0.5" Width="1.75" />
     <TypeIdentifier>
