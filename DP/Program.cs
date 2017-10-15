@@ -14,10 +14,10 @@ namespace DP
     {
         static void Main(string[] args)
         {
+            //Executor.ExecuteStrategy();
+            //Executor.ExecuteObserver();
             //Executor.ExecuteDecorator();
             //Executor.ExecuteSingleton();
-            Executor.ExecuteStrategy();
-            //Executor.ExecuteObserver();
             //Executor.ExecuteFactoryMethod();
             //Executor.ExecuteAdapter();
         }
