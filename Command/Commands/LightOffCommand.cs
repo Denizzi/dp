@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace Command.Commands
 {
-    public class LightOnCommand : ICommand
+    public class LightOffCommand : ICommand
     {
         private Light _light;
 
-        public LightOnCommand(Light light)
+        public LightOffCommand(Light light)
         {
             _light = light;
         }
 
         public void Execute()
         {
-            _light.On();
+            _light.Off();
         }
     }
 }

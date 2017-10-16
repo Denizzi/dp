@@ -20,6 +20,7 @@ namespace DP
             //Executor.ExecuteSingleton();
             //Executor.ExecuteFactoryMethod();
             //Executor.ExecuteAdapter();
+            Executor.ExecuteCommand();
         }
     }
 }

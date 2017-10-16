@@ -1,5 +1,8 @@
 ﻿using Adapter;
 using Adapter.Penguins;
+using Command;
+using Command.Commands;
+using Command.Receivers;
 using Decorator;
 using Decorator.Beverages;
 using Decorator.Condiments;
@@ -86,6 +89,20 @@ namespace DP
 
             penguin.Fly();
             penguin.Quack();
+        }
+
+        internal static void ExecuteCommand()
+        {
+            Light lamp = new Light();
+
+            ICommand switchClose = new LightOnCommand(lamp);
+            ICommand switchOpen = new LightOffCommand(lamp);
+
+            var remoteControl = new RemoteControl(switchClose, switchOpen);
+
+            remoteControl.Open();
+            remoteControl.Close();
+
         }
     }
 }

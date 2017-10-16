@@ -7,21 +7,27 @@ using System.Threading.Tasks;
 
 namespace Command
 {
+    /* The Invoker class */
     public class RemoteControl
     {
-        private IList<ICommand> _onCommands;
-        private IList<ICommand> _offCommands;
+        private ICommand _onCommand;
+        private ICommand _offCommand;
 
 
-        public RemoteControl()
+        public RemoteControl(ICommand onCommand, ICommand offCommand)
         {
-            _onCommands = new List<ICommand>();
-            _offCommands = new List<ICommand>();
+            _onCommand = onCommand;
+            _offCommand = offCommand;
+        }
 
-            var noCommand = new NoCommand();
+        public void Open()
+        {
+            _onCommand.Execute();
+        }
 
-            _onCommands.Add(noCommand);
-            _offCommands.Add(noCommand);
+        public void Close()
+        {
+            _offCommand.Execute();
         }
     }
 }
