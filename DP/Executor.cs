@@ -6,6 +6,7 @@ using Command.Receivers;
 using Decorator;
 using Decorator.Beverages;
 using Decorator.Condiments;
+using Facade;
 using FactoryMethod;
 using FactoryMethod.Characters;
 using Observer.DisplayElements;
@@ -102,7 +103,13 @@ namespace DP
 
             remoteControl.Open();
             remoteControl.Close();
+        }
 
+        internal static void ExecuteFacade()
+        {
+            var facade = new CarFacade();
+
+            facade.CreateCompleteCar();
         }
     }
 }
