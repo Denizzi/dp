@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E395DEB0-51B1-418B-95F1-8D2D3A5B77AE}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{615C42F3-07C3-4997-BD34-9890A567436A}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DP</RootNamespace>
-    <AssemblyName>DP</AssemblyName>
+    <RootNamespace>Template</RootNamespace>
+    <AssemblyName>Template</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,50 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Client.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Beverage.cs" />
+    <Compile Include="Implementations\Coffee.cs" />
+    <Compile Include="Implementations\Tea.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Adapter\Adapter.csproj">
-      <Project>{c640d023-48e6-452b-beb2-5faff36b5a00}</Project>
-      <Name>Adapter</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Command\Command.csproj">
-      <Project>{f1a5e651-5105-445e-a29a-0ce69858a81c}</Project>
-      <Name>Command</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Decorator\Decorator.csproj">
-      <Project>{9f3b2ba7-7abd-4f72-a521-f6487536a88a}</Project>
-      <Name>Decorator</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Facade\Facade.csproj">
-      <Project>{c7e86ed2-d2dd-4266-80e1-9fb30393db61}</Project>
-      <Name>Facade</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FactoryMethod\FactoryMethod.csproj">
-      <Project>{6f58882b-cd75-4b11-a282-6e1aa6a79fb3}</Project>
-      <Name>FactoryMethod</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Observer\Observer.csproj">
-      <Project>{83189bd0-085b-4094-9253-6968a481cb81}</Project>
-      <Name>Observer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Singleton\Singleton.csproj">
-      <Project>{8ea61b77-b2e4-43b1-8954-09bb2b30b434}</Project>
-      <Name>Singleton</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Strategy\Strategy.csproj">
-      <Project>{3c0309a5-f261-4c77-b4f5-17f21e0fbb0a}</Project>
-      <Name>Strategy</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Template\Template.csproj">
-      <Project>{615c42f3-07c3-4997-bd34-9890a567436a}</Project>
-      <Name>Template</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

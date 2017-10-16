@@ -21,7 +21,8 @@ namespace DP
             //Client.ExecuteFactoryMethod();
             //Client.ExecuteAdapter();
             //Client.ExecuteCommand();
-            Client.ExecuteFacade();
+            //Client.ExecuteFacade();
+            Client.ExecuteTemplate();
         }
     }
 }

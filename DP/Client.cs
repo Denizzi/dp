@@ -20,6 +20,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Template.Implementations;
 
 namespace DP
 {
@@ -110,6 +111,17 @@ namespace DP
             var facade = new CarFacade();
 
             facade.CreateCompleteCar();
+        }
+
+        internal static void ExecuteTemplate()
+        {
+            var tea = new Tea();
+            tea.PrepareRecipe();
+
+            Console.WriteLine();
+
+            var coffee = new Coffee();
+            coffee.PrepareRecipe();
         }
     }
 }
