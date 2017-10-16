@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="The Receiver knows how to perform the work needed to carry out the request. Any class can act as a Receiver.">
+    <Position X="3.156" Y="5.104" Height="1.042" Width="1.7" />
+  </Comment>
+  <Comment CommentText="The Invoker holds&#xD;&#xA;a command and at&#xD;&#xA;some point asks the&#xD;&#xA;command to carry&#xD;&#xA;out a request by&#xD;&#xA;calling its execute()&#xD;&#xA;method.">
+    <Position X="1.854" Y="0.5" Height="1.333" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Command declares an interface for all commands. As&#xD;&#xA;you already know, a command is invoked through its execute() method, which asks a receiver to perform an&#xD;&#xA;action.">
+    <Position X="8.833" Y="0.5" Height="1.615" Width="1.7" />
+  </Comment>
+  <Comment CommentText="The execute method invokes the action(s) on the receiver needed to fulfill&#xD;&#xA;the request.">
+    <Position X="10.125" Y="3.073" Height="0.948" Width="1.7" />
+  </Comment>
+  <Class Name="Command.Commands.LightOffCommand" BaseTypeListCollapsed="true">
+    <Position X="8" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\LightOffCommand.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_light" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Command.Commands.LightOnCommand" BaseTypeListCollapsed="true">
+    <Position X="6" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\LightOnCommand.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_light" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Command.RemoteControl">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAEAAAAAAAAAAAAAAAAAKAAAA=</HashCode>
+      <FileName>RemoteControl.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_offCommand" />
+      <Field Name="_onCommand" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Command.Receivers.Light">
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Receivers\Light.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Command.ICommand">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICommand.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
