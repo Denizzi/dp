@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Clients of beverages will depend on the Beverage abstraction rather than a concrete Tea or Coffee, which reduces dependencies in the overall system.">
+    <Position X="7.927" Y="0.5" Height="1.292" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Beverage is the high-level component. It has control over the algorithm for the recipe, and calls on the subclasses only when they’re needed for an implementation of a method.">
+    <Position X="3.781" Y="0.5" Height="1.448" Width="1.7" />
+  </Comment>
+  <Comment CommentText="The subclasses are used simply to&#xD;&#xA;provide implementation details.">
+    <Position X="2.562" Y="4.146" Height="0.802" Width="1.7" />
+  </Comment>
+  <Class Name="Template.Beverage">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAQAgAAAAAAAACAAAAAAAABAA=</HashCode>
+      <FileName>Beverage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Template.Implementations.Coffee">
+    <Position X="7.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Implementations\Coffee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Template.Implementations.Tea">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Implementations\Tea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
