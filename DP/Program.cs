@@ -14,14 +14,14 @@ namespace DP
     {
         static void Main(string[] args)
         {
-            //Executor.ExecuteStrategy();
-            //Executor.ExecuteObserver();
-            //Executor.ExecuteDecorator();
-            //Executor.ExecuteSingleton();
-            //Executor.ExecuteFactoryMethod();
-            //Executor.ExecuteAdapter();
-            //Executor.ExecuteCommand();
-            Executor.ExecuteFacade();
+            //Client.ExecuteStrategy();
+            //Client.ExecuteObserver();
+            //Client.ExecuteDecorator();
+            //Client.ExecuteSingleton();
+            //Client.ExecuteFactoryMethod();
+            //Client.ExecuteAdapter();
+            //Client.ExecuteCommand();
+            Client.ExecuteFacade();
         }
     }
 }

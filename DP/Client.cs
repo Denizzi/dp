@@ -23,7 +23,7 @@ using System.Threading.Tasks;
 
 namespace DP
 {
-    public class Executor
+    public class Client
     {
         internal static void ExecuteDecorator()
         {

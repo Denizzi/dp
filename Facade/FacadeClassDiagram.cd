@@ -7,7 +7,7 @@
     <Position X="2.156" Y="0.5" Height="1.229" Width="1.7" />
   </Comment>
   <Class Name="Facade.CarFacade">
-    <Position X="5.75" Y="0.5" Width="1.5" />
+    <Position X="5.5" Y="0.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAQAAAAAAAAAAAAQIAAA=</HashCode>
       <FileName>CarFacade.cs</FileName>
