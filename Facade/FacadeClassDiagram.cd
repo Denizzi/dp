@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="The client only knows CarFacade  [Principle of Least Knowledge] ">
+    <Position X="8.906" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="The CarFacade manages all those subsystem components for the client. It keeps the client simple&#xD;&#xA;and flexible.">
+    <Position X="2.156" Y="0.5" Height="1.229" Width="1.7" />
+  </Comment>
+  <Class Name="Facade.CarFacade">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAQAAAAAAAAAAAAQIAAA=</HashCode>
+      <FileName>CarFacade.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="body" />
+      <Field Name="engine" />
+      <Field Name="model" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Facade.SubSystems.CarBody">
+    <Position X="3.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SubSystems\CarBody.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Facade.SubSystems.CarEngine">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>SubSystems\CarEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Facade.SubSystems.CarModel">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SubSystems\CarModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

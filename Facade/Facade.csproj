@@ -46,6 +46,9 @@
     <Compile Include="SubSystems\CarEngine.cs" />
     <Compile Include="SubSystems\CarModel.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="FacadeClassDiagram.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
