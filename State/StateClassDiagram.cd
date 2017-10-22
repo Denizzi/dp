@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="The State interface defines a common interface for all concrete states; the&#xD;&#xA;states all implement the same interface, so they are interchangeable.">
+    <Position X="9.698" Y="0.5" Height="1.542" Width="1.7" />
+  </Comment>
+  <Comment CommentText="The Context is the class that can have a number of internal states.">
+    <Position X="1.208" Y="0.594" Height="0.656" Width="1.7" />
+  </Comment>
+  <Comment CommentText="ConcreteStates handle requests from the Context. Each ConcreteState provides its own implementation for a request. In this way, when the Context changes state, its behavior will change as well.">
+    <Position X="3.865" Y="4.104" Height="1.688" Width="1.7" />
+  </Comment>
+  <Class Name="State.SodaMachineState">
+    <Position X="7.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>ISodaMachineState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="State.SodaMachineContext">
+    <Position X="3.5" Y="0.5" Width="1.75" />
+    <AssociationLine Name="_currentState" Type="State.SodaMachineState" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="5.25" Y="1.313" />
+        <Point X="7.25" Y="1.313" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAJAAAAAAAAAAAAAAEAAAAAAAIAAAAAAAAAAEAABA=</HashCode>
+      <FileName>SodaMachine.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_currentState" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="State.States.HasCoinState">
+    <Position X="6" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAABAAAAAAEAAAA=</HashCode>
+      <FileName>States\HasCoinState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="State.States.NoCoinState">
+    <Position X="8.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAAAAAABAAAAAAEAAAA=</HashCode>
+      <FileName>States\NoCoinState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

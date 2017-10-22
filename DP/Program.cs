@@ -22,7 +22,8 @@ namespace DP
             //Client.ExecuteAdapter();
             //Client.ExecuteCommand();
             //Client.ExecuteFacade();
-            Client.ExecuteTemplate();
+            //Client.ExecuteTemplate();
+            Client.ExecuteState();
         }
     }
 }

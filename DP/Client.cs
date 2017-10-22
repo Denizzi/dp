@@ -12,6 +12,7 @@ using FactoryMethod.Characters;
 using Observer.DisplayElements;
 using Observer.Subject;
 using Singleton;
+using State;
 using Strategy;
 using Strategy.Ducks;
 using Strategy.FlyBehaviour;
@@ -123,5 +124,16 @@ namespace DP
             var coffee = new Coffee();
             coffee.PrepareRecipe();
         }
+        internal static void ExecuteState()
+        {
+            var sodaMachine = new SodaMachineContext();
+
+            sodaMachine.PressGetSodaButton();
+            sodaMachine.EjectCoin();
+
+            sodaMachine.InsertCoin();
+            sodaMachine.PressGetSodaButton();
+        }
+
     }
 }
