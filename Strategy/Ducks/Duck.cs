@@ -9,7 +9,6 @@ namespace Strategy
     public abstract class Duck
     {
         //Favor composition over inheritance
-        //Multiple Behaviours
         protected IFlyable _flyBehaviour;
         protected IQuackable _quackBehaviour;
         public Duck()
